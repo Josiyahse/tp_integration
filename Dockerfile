@@ -1,13 +1,7 @@
-# syntax=docker/dockerfile:1
-
-FROM openjdk:16-alpine3.13
-
-WORKDIR /app
-
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN ./mvnw dependency:go-offline
-
-COPY src ./src
-
-CMD ["./mvnw", "spring-boot:run"]
+# build
+FROM maven
+WORKDIR /usr/src/app
+COPY pom.xml .
+RUN mvn -B -e -C -T 1C org.apache.maven.plugins:maven-dependency-plugin:3.1.2:go-offline
+COPY . .
+RUN mvn -B -e -o -T 1C verify
