@@ -10,28 +10,28 @@
    
    `Création d'un repository github`
 
-2. Ajouter un Jenkinsfile qui permettra de controler l'intégration continue du projet
+2. Créer un fichier TP.md qui contient les membres de votre groupe, et une description de ce que vous avez fait, les difficulités rencontrées, comment vous y avez remédiées.
+
+   `Le fichier TP.md permet de listé les différentes actions effectués sur le projet. Ainsi que les réussites et les problèmes rencontrer.`
+
+3. Ajouter un Jenkinsfile qui permettra de controler l'intégration continue du projet
 
    `Jenkins créer sur une VM ubuntu. L'utilisation de celui-ci s'effectue via un conteneur Docker`
    - Ce qu'il faut faire : 
 
-3. Build du code
+4. Build du code
 
     ``
 
-4. Exécution de tests unitaires (si le projet en fourni), et de tests statiques
+5. Exécution de tests unitaires (si le projet en fourni), et de tests statiques
 
     ``
 
-5. Génération d'un package (maven)
+6. Génération d'un package (maven)
 
     ``
 
-6. Publication du package sur Nexus
-
-    ``
-
-7. Créer un fichier TP.md qui contient les membres de votre groupe, et une description de ce que vous avez fait, les difficulités rencontrées, comment vous y avez remédiées.
+7. Publication du package sur Nexus
 
     ``
 
