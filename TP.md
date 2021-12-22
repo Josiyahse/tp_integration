@@ -17,7 +17,9 @@
 3. Ajouter un Jenkinsfile qui permettra de controler l'intégration continue du projet
 
    `Jenkins créer sur une VM ubuntu. L'utilisation de celui-ci s'effectue via un conteneur Docker`
+
    - Ce qu'il faut faire : 
+   
 
 4. Build du code
 
