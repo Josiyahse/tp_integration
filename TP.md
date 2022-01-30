@@ -19,7 +19,7 @@
    `Jenkins créer sur une VM ubuntu. L'utilisation de celui-ci s'effectue via un conteneur Docker`
 
    - Ce qu'il faut faire : 
-   
+   `Mise en place d'un pipeline pour le projet`
 
 4. Build du code
 
