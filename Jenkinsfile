@@ -23,6 +23,7 @@ pipeline {
         }
     }
 }
+}
 // Script //
 node {
     stage('Initialize') {
@@ -30,11 +31,10 @@ node {
     }
     stage('Build') {
         bat "set"
-        withMaven {
-            git changelog: false, poll: false, url: 'https://github.com/Josiyahse/tp_integration.git'
+            withMaven {
+                git changelog: false, poll: false, url: 'https://github.com/Josiyahse/tp_integration.git'
         
-            bat "mvn package"
+                bat "mvn package"
+            }
     }
-    }
-    
 }
