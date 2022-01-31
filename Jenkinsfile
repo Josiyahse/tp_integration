@@ -16,13 +16,25 @@ pipeline {
 
         stage ('Build') {
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true install' 
-            }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
+                sh 'printenv'
+                withMaven(mavenSettingsConfig: 'maven-settings-global') {
+                    sh 'mvn clean package'
             }
         }
     }
+}
+// Script //
+node {
+    stage('Initialize') {
+        echo 'Building....'
+    }
+    stage('Build') {
+        bat "set"
+        withMaven {
+            git changelog: false, poll: false, url: 'https://github.com/Josiyahse/tp_integration.git'
+        
+            bat "mvn package"
+    }
+    }
+    
 }
