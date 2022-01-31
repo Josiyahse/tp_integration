@@ -19,7 +19,16 @@
    `Jenkins créer sur une VM ubuntu. L'utilisation de celui-ci s'effectue via un conteneur Docker`
 
    - Ce qu'il faut faire : 
+
+   `Mise en place d'un Credentials pour le projet git`
    `Mise en place d'un pipeline pour le projet`
+   `Configurer le Build Triggers sur Scrutation de l'outil de gestion de version avec H/15 * * * * comme paramètre`
+   `Configurer le pipeline script from SCM`
+   `Création du fichier Jenkinsfile sur le projet git`
+   `Mettre un script pour vérifier le pipeline dans le Jenkinsfile`
+   `Test du script valider`
+   `Modifier le script pour executer les tests unitaires`
+   
 
 4. Build du code
 
