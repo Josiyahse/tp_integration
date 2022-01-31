@@ -28,25 +28,22 @@
    `Mettre un script pour vérifier le pipeline dans le Jenkinsfile`
    `Test du script valider`
    `Modifier le script pour executer les tests unitaires`
+   `Erreur de version pour maven et le jdk lors du test du pipeline`
    
-
-4. Build du code
-
-    ``
-
 5. Exécution de tests unitaires (si le projet en fourni), et de tests statiques
 
-    ``
+    `Utilisation de de l'editeur intelliJ pour démarer le package maven et run les tests unitaires`
 
 6. Génération d'un package (maven)
 
-    ``
-
-7. Publication du package sur Nexus
-
-    ``
+    `Pour la génération du package, utiliser la commande 'mvn clean package' et build le projet`
 
 8. packaging du projet sous Docker
 
-    ``
+    `Utilisation de jenkins sous docker`
 
+## Érreur pour réaliser le tp
+
+![](https://cdn.discordapp.com/attachments/921384665238081626/937819168961618030/unknown.png)
+
+`Les PATH pour maven et le jdk ne son pas trouver par le pipeline`
